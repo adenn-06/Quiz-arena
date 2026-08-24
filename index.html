@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section id="startScreen" class="screen">
+            <h1>Quiz Arena</h1>
+            <p>Uji pengetahuanmu dan raih skor tertinggi!</p>
+
+            <button id="startBtn">Mulai Quiz</button>
+        </section>
+
+
+        <section id="quizScreen" class="screen hidden">
+
+            <div class="top-bar">
+                <span>❤️ Nyawa: <b id="lives">3</b></span>
+                <span>🏆 Skor: <b id="score">0</b></span>
+                <span>⏱️ <b id="timer">15</b></span>
+            </div>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="questionNumber">Soal 1 / 10</p>
+
+            <h2 id="question">
+                Pertanyaan akan muncul di sini
+            </h2>
+
+            <div id="answers"></div>
+
+            <p id="feedback"></p>
+
+        </section>
+
+
+        <section id="resultScreen" class="screen hidden">
+
+            <h1>Quiz Selesai!</h1>
+
+            <p>Skor kamu:</p>
+
+            <h2 id="finalScore">0</h2>
+
+            <p id="resultMessage"></p>
+
+            <button id="restartBtn">
+                Main Lagi
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
